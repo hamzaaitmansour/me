@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hamza Ait Mansour · Mobile Engineer Flutter</title>
+  <meta name="description" content="Portfolio de Hamza Ait Mansour, Mobile Engineer Flutter chez Tandeem (Rabat). Applications Flutter, backend Spring Boot et Node.js, infrastructure AWS en Terraform.">
+  <meta name="author" content="Hamza Ait Mansour">
+  <meta name="theme-color" content="#F1E9D3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hamza Ait Mansour · Mobile Engineer Flutter">
+  <meta property="og:description" content="Applications Flutter, l'API et le cloud qui les font tourner. Projets, parcours, CV.">
+  <meta property="og:image" content="assets/img/og-card.jpg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/league-gothic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/courier-prime-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hamza-portrait.webp" as="image">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var seen = false;
+      try { seen = sessionStorage.getItem('hm-leader') === '1'; } catch (e) {}
+      if (!reduce && !seen && !location.hash) d.classList.add('is-leader');
+      if (!reduce) d.classList.add('is-intro');
+      var l = null;
+      try { l = localStorage.getItem('hm-lang'); } catch (e) {}
+      if (l !== 'fr' && l !== 'en') {
+        var n = (navigator.languages && navigator.languages[0]) || navigator.language || 'fr';
+        l = /^en/i.test(n) ? 'en' : 'fr';
+      }
+      d.setAttribute('data-lang', l);
+    })();
+  </script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5a3 3 0 0 0-.9-2.3c3-.3 6.1-1.5 6.1-6.6a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.6 12.6 0 0 0-6.6 0C5.8 1.1 4.7 1.4 4.7 1.4a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 3.2 8.6c0 5.1 3.1 6.3 6.1 6.6A3 3 0 0 0 8.4 17.5V21"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><path d="M12 12.5a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15H4V4h11v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+  </svg>
+
+  <div class="leader" aria-hidden="true">
+    <div class="leader__dial">
+      <span class="leader__sweep"></span>
+      <span class="leader__cross"></span>
+      <span class="leader__ring"></span>
+      <span class="leader__num" data-leader-num>3</span>
+    </div>
+    <p class="leader__credit"><span data-i18n="leader.credit">Une production</span> Hamza Ait Mansour</p>
+  </div>
+
+  <div class="sheet-frame" aria-hidden="true"></div>
+
+  <a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <header class="topbar" data-topbar>
+    <div class="topbar__in">
+      <a class="status" href="#contact">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span class="status__long" data-i18n="status.long">Disponible · ouvert aux opportunités</span>
+        <span class="status__short" data-i18n="status.short">Disponible</span>
+      </a>
+      <nav class="nav" aria-label="Sections" data-i18n-attr="aria-label:nav.label">
+        <a class="nav__a roll" href="#projets"><span class="roll__t" data-i18n="nav.work">Projets</span><sup class="nav__count" data-count="work">[08]</sup></a>
+        <a class="nav__a roll" href="#services"><span class="roll__t" data-i18n="nav.services">Services</span><sup class="nav__count" data-count="services">[04]</sup></a>
+        <a class="nav__a roll" href="#parcours"><span class="roll__t" data-i18n="nav.experience">Parcours</span><sup class="nav__count" data-count="experience">[04]</sup></a>
+        <a class="nav__a roll" href="#hors-champ"><span class="roll__t" data-i18n="nav.about">Hors champ</span></a>
+      </nav>
+      <div class="topbar__end">
+        <div class="lang" role="group" aria-label="Langue" data-i18n-attr="aria-label:lang.label">
+          <button type="button" class="lang__b" data-set-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang__b" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--amber btn--sm roll topbar__cv" data-cv href="cv/fr/hamza.aitmansour-flutter.pdf" download><span class="roll__t" data-i18n="nav.cv">CV</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+        <button type="button" class="menu-b" data-menu-open aria-expanded="false" aria-controls="menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg><span data-i18n="menu">Menu</span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <div class="menu__in">
+      <button type="button" class="menu__close" data-menu-close><svg class="ic" aria-hidden="true"><use href="#i-close"/></svg><span data-i18n="close">Fermer</span></button>
+      <nav class="menu__nav" aria-label="Menu">
+        <a href="#projets" data-menu-link><span data-i18n="nav.work">Projets</span><sup data-count="work">[08]</sup></a>
+        <a href="#services" data-menu-link><span data-i18n="nav.services">Services</span><sup data-count="services">[04]</sup></a>
+        <a href="#parcours" data-menu-link><span data-i18n="nav.experience">Parcours</span><sup data-count="experience">[04]</sup></a>
+        <a href="#hors-champ" data-menu-link><span data-i18n="nav.about">Hors champ</span></a>
+        <a href="#contact" data-menu-link><span data-i18n="nav.contact">Contact</span></a>
+        <a class="menu__cv" data-cv href="cv/fr/hamza.aitmansour-flutter.pdf" download data-menu-link><span data-i18n="nav.cvlong">Télécharger le CV</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+      </nav>
+      <div class="lang lang--menu" role="group" aria-label="Langue" data-i18n-attr="aria-label:lang.label">
+        <button type="button" class="lang__b" data-set-lang="fr" aria-pressed="true">Français</button>
+        <button type="button" class="lang__b" data-set-lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero__stage" data-stage>
+        <div class="hero__light" aria-hidden="true"></div>
+        <h1 class="name" id="hero-name" data-name><span class="name__first">Hamza</span> <span class="name__last">Ait Mansour</span></h1>
+        <div class="shadow" data-shadow aria-hidden="true"><div class="shadow__lit" data-lit></div></div>
+        <img class="hero__portrait" data-portrait src="assets/img/hamza-portrait.webp" width="906" height="1400" alt="Portrait de Hamza Ait Mansour, en veste grise" data-i18n-attr="alt:hero.alt" fetchpriority="high">
+
+        <div class="hero__intro">
+          <p class="hero__role" data-i18n="hero.role">Flutter Mobile Engineer</p>
+          <p class="hero__line" data-i18n="hero.line">Je construis des applications Flutter, et je livre aussi l'API et le cloud qui les font tourner.</p>
+          <div class="hero__cta">
+            <a class="btn btn--amber roll" data-cv href="cv/fr/hamza.aitmansour-flutter.pdf" download><span class="roll__t" data-i18n="cta.cv">Télécharger le CV</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+            <a class="btn btn--line roll" href="#projets"><span class="roll__t" data-i18n="cta.work">Voir les projets</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+
+        <ul class="hero__social" aria-label="Liens" data-i18n-attr="aria-label:hero.links">
+          <li><a class="chip roll" href="https://github.com/hamzaaitmansour" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg><span class="roll__t">GitHub</span></a></li>
+          <li><a class="chip roll" href="mailto:hamza.aitmansour@edu.uiz.ac.ma"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span class="roll__t" data-i18n="chip.mail">E-mail</span></a></li>
+          <li><a class="chip roll" href="tel:+212645386360"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="roll__t" data-i18n="chip.phone">Téléphone</span></a></li>
+          <li><span class="chip chip--plain"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="chip.city">Rabat, Maroc</span></span></li>
+        </ul>
+      </div>
+
+      <div class="billing" role="group" aria-label="Générique" data-i18n-attr="aria-label:billing.label">
+        <p class="billing__stars"><span class="nw"><i class="lead">•</i> Flutter</span> <span class="nw"><i>•</i> Dart</span> <span class="nw"><i>•</i> Spring Boot</span> <span class="nw"><i>•</i> Node.js</span> <span class="nw"><i>•</i> AWS</span> <span class="nw"><i>•</i> Terraform</span> <span class="nw"><i>•</i> Docker</span></p>
+        <dl class="billing__cells">
+          <div><dt data-i18n="billing.now">Actuellement</dt><dd>Mobile Engineer · Tandeem, Rabat</dd></div>
+          <div><dt data-i18n="billing.school">Formé à</dt><dd data-i18n="billing.schoolv">ENSA Agadir · Ingénieur d'État 2026</dd></div>
+          <div><dt data-i18n="billing.cert">Certifié</dt><dd>Oracle · Java SE 17 (OCP)</dd></div>
+          <div><dt data-i18n="billing.lang">Langues</dt><dd><span lang="ar">العربية</span> · Français · English</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="sect sect--work" id="projets" aria-labelledby="work-title">
+      <div class="sect__head">
+        <p class="ghost" aria-hidden="true" data-i18n="work.ghost">À l'affiche</p>
+        <h2 class="sect__title" id="work-title"><span class="slash" aria-hidden="true">/</span><span data-i18n="work.title">Projets choisis</span></h2>
+      </div>
+      <div class="work__bar">
+        <div class="filters" role="group" aria-label="Filtrer les projets" data-i18n-attr="aria-label:work.filter">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true"><span data-i18n="f.all">Tout</span><sup data-fcount="all"></sup></button>
+          <button type="button" class="filter" data-filter="pro" aria-pressed="false"><span data-i18n="f.pro">Pro</span><sup data-fcount="pro"></sup></button>
+          <button type="button" class="filter" data-filter="hack" aria-pressed="false"><span data-i18n="f.hack">Hackathons</span><sup data-fcount="hack"></sup></button>
+          <button type="button" class="filter" data-filter="side" aria-pressed="false"><span data-i18n="f.side">École &amp; perso</span><sup data-fcount="side"></sup></button>
+        </div>
+        <a class="btn btn--line btn--sm roll" href="https://github.com/hamzaaitmansour" target="_blank" rel="noopener"><span class="roll__t" data-i18n="work.github">Tout sur GitHub</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+      </div>
+      <div class="bills" data-bills></div>
+      <noscript><p class="noscript">Projets : covoiturage Tandeem, Événements &amp; Formulaires (PFE), portail intranet bancaire, OptiFood, EDUTRAQ, BioQuest (NASA Space Apps 2025), Agadir 2030, EducazenKids.</p></noscript>
+
+      <div class="shorts" data-shorts-wrap>
+        <h3 class="shorts__title"><span class="slash" aria-hidden="true">/</span><span data-i18n="shorts.title">Courts-métrages</span></h3>
+        <ul class="shorts__list" data-shorts></ul>
+      </div>
+    </section>
+
+    <section class="sect sect--services" id="services" aria-labelledby="services-title">
+      <div class="sect__head sect__head--left">
+        <p class="ghost" aria-hidden="true" data-i18n="services.ghost">Savoir-faire</p>
+        <h2 class="sect__title" id="services-title"><span class="slash" aria-hidden="true">/</span><span data-i18n="services.title">Ce que je fais</span></h2>
+      </div>
+      <div class="acc" data-acc></div>
+    </section>
+
+    <section class="sect sect--night" id="parcours" aria-labelledby="exp-title">
+      <div class="night__in">
+        <div class="sect__head sect__head--split">
+          <p class="ghost ghost--night" aria-hidden="true" data-i18n="exp.ghost">Filmographie</p>
+          <h2 class="sect__title" id="exp-title"><span class="slash" aria-hidden="true">/</span><span data-i18n="exp.title">Parcours</span></h2>
+          <p class="sect__aside" data-i18n="exp.aside">Ingénieur d'État · ENSA Agadir · 2026</p>
+        </div>
+        <ol class="reel" data-reel></ol>
+      </div>
+      <div class="still" data-still aria-hidden="true"></div>
+    </section>
+
+    <section class="sect sect--about" id="hors-champ" aria-labelledby="about-title">
+      <div class="sect__head sect__head--left">
+        <p class="ghost" aria-hidden="true" data-i18n="about.ghost">Coulisses</p>
+        <h2 class="sect__title" id="about-title"><span class="slash" aria-hidden="true">/</span><span data-i18n="about.title">Hors champ</span></h2>
+      </div>
+      <div class="about">
+        <figure class="about__fig">
+          <div class="about__door" aria-hidden="true"></div>
+          <button type="button" class="about__print" data-colour aria-pressed="false">
+            <img class="about__img about__img--duo" src="assets/img/hamza-graduation.webp" width="916" height="1300" alt="Hamza Ait Mansour souriant, un bouquet de roses dans les bras, le jour de sa remise de diplôme" data-i18n-attr="alt:about.alt" loading="lazy">
+            <img class="about__img about__img--color" src="assets/img/hamza-graduation-color.webp" width="916" height="1300" alt="" aria-hidden="true" loading="lazy">
+            <span class="sr-only" data-i18n="about.colour">Afficher la photo en couleur</span>
+          </button>
+          <figcaption data-i18n="about.caption">ENSA Agadir · juin 2026</figcaption>
+        </figure>
+        <div class="about__text">
+          <p class="about__lede" data-i18n="about.lede">Ingénieur d'État en Génie Informatique, je suis Mobile Engineer chez Tandeem à Rabat. Je construis des applications Flutter propres et testées, et j'aime descendre d'un étage&nbsp;: l'API, la base de données, l'infrastructure AWS qui les fait tourner.</p>
+          <p class="about__p" data-i18n="about.p2">J'ai soutenu mon projet de fin d'études le 26 juin 2026, sur la plateforme SaaS Tandeem. Je travaille en Scrum, au contact direct du client, avec les équipes backend, front et mobile.</p>
+          <dl class="facts">
+            <div class="facts__cell">
+              <dt data-i18n="facts.edu">Formation</dt>
+              <dd data-i18n="facts.eduv">Diplôme d'Ingénieur d'État en Génie Informatique, ENSA Agadir, 2021–2026</dd>
+            </div>
+            <div class="facts__cell">
+              <dt data-i18n="facts.cert">Certification</dt>
+              <dd>Oracle Certified Professional: Java SE 17 Developer</dd>
+            </div>
+            <div class="facts__cell">
+              <dt data-i18n="facts.lang">Langues</dt>
+              <dd data-i18n="facts.langv">Arabe (langue maternelle) · Français B2 · Anglais B2</dd>
+            </div>
+            <div class="facts__cell facts__cell--wide">
+              <dt data-i18n="facts.vol">Bénévolat</dt>
+              <dd>
+                <p data-i18n="facts.vol1"><strong>Motatawi3, 2024.</strong> Ateliers sur l'environnement, la santé, l'IA et l'engagement social, puis deux semaines d'actions bénévoles dans un hôpital de quartier à Agadir.</p>
+                <p data-i18n="facts.vol2"><strong>Orientation, 2024.</strong> Trois séances d'orientation pour des lycéens sur les études après le bac, avec la présentation de l'ENSA et des parcours possibles.</p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="sect sect--contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__shadow" aria-hidden="true"></div>
+      <div class="contact__in">
+        <h2 class="contact__title" id="contact-title" data-i18n="contact.title">Vous recrutez&nbsp;?</h2>
+        <p class="contact__line" data-i18n="contact.line">Mobile, backend ou cloud&nbsp;: parlons de votre équipe et de votre produit.</p>
+        <div class="contact__cta">
+          <a class="btn btn--ink btn--lg roll" href="mailto:hamza.aitmansour@edu.uiz.ac.ma"><span class="roll__t" data-i18n="contact.write">M'écrire</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+          <a class="btn btn--line-ink btn--lg roll" data-cv href="cv/fr/hamza.aitmansour-flutter.pdf" download><span class="roll__t" data-i18n="cta.cv">Télécharger le CV</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+        </div>
+        <ul class="contact__chips">
+          <li><button type="button" class="chip chip--ink" data-copy="hamza.aitmansour@edu.uiz.ac.ma"><svg class="ic" aria-hidden="true" data-copy-icon><use href="#i-copy"/></svg><span data-copy-label>hamza.aitmansour@edu.uiz.ac.ma</span></button></li>
+          <li><a class="chip chip--ink roll" href="tel:+212645386360"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span class="roll__t">+212 6 45 38 63 60</span></a></li>
+          <li><a class="chip chip--ink roll" href="https://github.com/hamzaaitmansour" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg><span class="roll__t">github.com/hamzaaitmansour</span></a></li>
+        </ul>
+        <p class="contact__status"><span class="status__dot status__dot--ink" aria-hidden="true"></span><span data-i18n="contact.status">Basé à Rabat, Maroc · ouvert aux opportunités</span></p>
+      </div>
+    </section>
+  </main>
+
+  <article class="dossier" id="dossier" data-dossier hidden tabindex="-1" aria-labelledby="dossier-title"></article>
+
+  <div class="wipe" data-wipe aria-hidden="true"></div>
+  <p class="sr-only" aria-live="polite" data-announce></p>
+
+  <footer class="fin">
+    <p class="fin__word" aria-hidden="true" data-i18n="fin.word">Fin</p>
+    <div class="fin__credits">
+      <p>© 2026 Hamza Ait Mansour</p>
+      <p data-i18n="fin.printed">Imprimé à Rabat, Maroc</p>
+      <a class="roll fin__top" href="#main"><span class="roll__t" data-i18n="fin.top">Retour en haut</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
