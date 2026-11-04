@@ -48,6 +48,12 @@ A mobile engineer who ships the whole slice: the Flutter app, the API behind it 
 - **EducazenKids** (10/2026), side project:
   - Student app prototype, families site and staff dashboard for an inclusive school in Agadir.
   - Live at hamzaaitmansour.github.io/educat-mobile.
+- **huban** (08–10/2026), online jewellery brand for Morocco, cash on delivery:
+  - Next.js 15 storefront (collection, product pages, the « Mon Look » composer, checkout, order tracking) and a back office (phone-confirmation call queue, dashboard, catalogue, reviews).
+  - Express 5 + TypeScript API, PostgreSQL / Prisma, 14-state order lifecycle, S3 media, Docker Compose, CI. Brand kit generated in code.
+  - Not deployed yet and the repository is private, so no link. Screens in `assets/img/huban-*.webp`.
+- **DAMI** (2026), site for a Moroccan kimono label, live at dami-vitrine.vercel.app:
+  - Campaign film, signature-piece carousel, FR / EN / AR with right-to-left Arabic, cart and WhatsApp ordering recorded by a Vercel serverless function. Plain HTML, CSS and JS.
 - **School projects:**
   - Event management backend (2025): Spring Boot, WebSockets, Spring Security, Spring AI, Docker on AWS.
   - Classroom booking system (2024): Java EE, Hibernate JPA, MySQL.

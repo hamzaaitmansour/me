@@ -268,6 +268,87 @@
       links: []
     },
     {
+      id: 'huban', kind: 'pro', year: '2026', art: 'screens',
+      title: { fr: 'huban', en: 'huban' },
+      sub: { fr: 'Bijouterie en ligne · Maroc', en: 'Online jewellery brand · Morocco' },
+      tags: ['Next.js', 'Express', 'PostgreSQL', 'Prisma'],
+      summary: {
+        fr: "Une bijouterie en ligne payée à la livraison : la vitrine Next.js, l'API et le back-office où l'équipe confirme chaque commande par téléphone.",
+        en: 'An online jewellery shop paid in cash at the door: the Next.js storefront, the API, and the back office where staff confirm every order by phone.'
+      },
+      role: { fr: 'Développeur full-stack : vitrine, API et back-office', en: 'Full-stack developer: storefront, API and back office' },
+      period: { fr: '08 – 10/2026', en: '08 – 10/2026' },
+      stack: ['Next.js 15', 'React 19', 'Tailwind CSS v4', 'next-intl', 'Express 5', 'TypeScript', 'Zod', 'PostgreSQL 16', 'Prisma', 'Redis', 'S3 (MinIO / R2)', 'Docker Compose', 'GitHub Actions', 'Vitest'],
+      built: {
+        fr: [
+          'Vitrine en français : accueil plein écran, collection en sept catégories, fiche produit avec le choix de la finition (doré, argenté, rosé), le délai de fabrication et les avis modérés.',
+          '« Mon Look » : cinq questions (occasion, style, finition, présence, budget) qui composent deux parures avec les seules pièces que la boutique peut fabriquer.',
+          'Commande sans carte bancaire, payée en espèces à la livraison, puis suivie avec le numéro de commande et le téléphone.',
+          'Back-office : file d’appels pour confirmer chaque commande au clavier, avec annulation de la dernière action ; tableau de bord des taux de confirmation et de refus ; catalogue avec variantes, import CSV / XLSX et modération des avis.',
+          'API Express 5 en TypeScript, PostgreSQL et Prisma, cycle de vie de commande à 14 états, connexion du personnel (mots de passe scrypt, jetons de rafraîchissement tournants), médias sur un stockage S3, toute la pile sous Docker Compose avec une CI.',
+          'Identité de marque générée en code : monogramme calligraphié, logos, icônes et charte de sept pages.'
+        ],
+        en: [
+          'A French storefront: a full-screen home, a collection in seven categories, product pages with the finish choice (gold, silver, rose), the making time and moderated reviews.',
+          '“Mon Look”: five questions (occasion, style, finish, presence, budget) that build two sets from the pieces the shop can actually make.',
+          'Checkout without a card, paid in cash on delivery, then tracked with the order number and the phone.',
+          'Back office: a call queue to confirm each order from the keyboard, with undo; a dashboard of confirmation and refusal rates; a catalogue with variants, CSV / XLSX import and review moderation.',
+          'Express 5 API in TypeScript, PostgreSQL and Prisma, a 14-state order lifecycle, staff sign-in (scrypt passwords, rotating refresh tokens), media on S3 storage, the whole stack in Docker Compose with CI.',
+          'A brand identity generated in code: a calligraphy monogram, logos, icons and a seven-page brand sheet.'
+        ]
+      },
+      images: [
+        { src: IMG + 'huban-home.webp', w: 1440, h: 900, wide: true, alt: { fr: 'Accueil huban : le nom en fond, derrière le modèle', en: 'huban home: the name set behind the model' } },
+        { src: IMG + 'huban-m-home.webp', w: 540, h: 1169, alt: { fr: 'Accueil sur mobile', en: 'Home on mobile' } },
+        { src: IMG + 'huban-m-product.webp', w: 540, h: 1169, alt: { fr: 'Fiche produit sur mobile', en: 'Product page on mobile' } },
+        { src: IMG + 'huban-m-look.webp', w: 540, h: 1169, alt: { fr: 'Parure proposée par « Mon Look »', en: 'A set suggested by Mon Look' } },
+        { src: IMG + 'huban-m-order.webp', w: 540, h: 1169, alt: { fr: 'Commande reçue, à confirmer par téléphone', en: 'Order received, to be confirmed by phone' } },
+        { src: IMG + 'huban-shop.webp', w: 1440, h: 900, wide: true, alt: { fr: 'La collection et ses catégories', en: 'The collection and its categories' } },
+        { src: IMG + 'huban-look.webp', w: 1440, h: 900, wide: true, alt: { fr: '« Mon Look » : deux parures construites à partir des réponses', en: 'Mon Look: two sets built from the answers' } },
+        { src: IMG + 'huban-admin-orders.webp', w: 1440, h: 900, wide: true, alt: { fr: 'Back-office : la file d’appels de confirmation', en: 'Back office: the confirmation call queue' } },
+        { src: IMG + 'huban-admin-dash.webp', w: 1440, h: 900, wide: true, alt: { fr: 'Back-office : le tableau de bord', en: 'Back office: the dashboard' } }
+      ],
+      links: []
+    },
+    {
+      id: 'dami', kind: 'pro', year: '2026', art: 'screens',
+      title: { fr: 'DAMI', en: 'DAMI' },
+      sub: { fr: 'Marque de mode marocaine · site vitrine', en: 'Moroccan fashion label · storefront' },
+      tags: ['HTML / CSS / JS', 'Vercel', 'FR · EN · AR', 'WhatsApp'],
+      summary: {
+        fr: "Le site d'une marque construite autour d'un seul kimono : un film de campagne, trois langues dont l'arabe, et la commande par WhatsApp.",
+        en: 'The site of a label built around one kimono: a campaign film, three languages including Arabic, and ordering through WhatsApp.'
+      },
+      role: { fr: 'Développeur web', en: 'Web developer' },
+      period: { fr: '2026 · en ligne sur Vercel', en: '2026 · live on Vercel' },
+      stack: ['HTML', 'CSS', 'JavaScript', 'Vercel', 'Fonction serverless', 'FR / EN / AR'],
+      built: {
+        fr: [
+          'Un film de campagne en ouverture, avec un bouton pour le son, mis en pause dès qu’il sort de l’écran.',
+          'La pièce signature dans un carrousel : portée par un homme, par une femme, les deux ensemble, et une vue 3D détourée.',
+          'Panier puis formulaire de commande (silhouette, taille, quantité) : la demande est enregistrée par une fonction serverless sur Vercel avec un identifiant unique, puis WhatsApp s’ouvre avec le message déjà rédigé.',
+          'Français, anglais et arabe : un seul bouton réécrit les textes, le titre et les balises de partage, passe la mise en page de droite à gauche pour l’arabe et garde la langue dans l’URL.',
+          'HTML, CSS et JavaScript, sans framework.'
+        ],
+        en: [
+          'A campaign film opens the page, with a sound switch, and pauses as soon as it leaves the screen.',
+          'The signature piece in a carousel: worn by a man, by a woman, both together, and a 3D cut-out.',
+          'Cart, then an order form (silhouette, size, quantity): the request is saved by a serverless function on Vercel under a unique ID, then WhatsApp opens with the message already written.',
+          'French, English and Arabic: one switch rewrites the copy, the title and the share tags, turns the layout right to left for Arabic and keeps the language in the URL.',
+          'Plain HTML, CSS and JavaScript, no framework.'
+        ]
+      },
+      images: [
+        { src: IMG + 'dami-home.webp', w: 1440, h: 900, wide: true, alt: { fr: 'Accueil DAMI : le film de campagne', en: 'DAMI home: the campaign film' } },
+        { src: IMG + 'dami-m-signature.webp', w: 540, h: 1169, alt: { fr: 'La pièce signature sur mobile', en: 'The signature piece on mobile' } },
+        { src: IMG + 'dami-m-ar.webp', w: 540, h: 1169, alt: { fr: 'La version arabe, de droite à gauche', en: 'The Arabic version, right to left' } },
+        { src: IMG + 'dami-m-cart.webp', w: 540, h: 1169, alt: { fr: 'Le panier', en: 'The cart' } },
+        { src: IMG + 'dami-m-order.webp', w: 540, h: 1169, alt: { fr: 'Le formulaire avant WhatsApp', en: 'The order form before WhatsApp' } },
+        { src: IMG + 'dami-order.webp', w: 1440, h: 900, wide: true, alt: { fr: 'La commande sur ordinateur', en: 'Ordering on desktop' } }
+      ],
+      links: [{ kind: 'site', href: 'https://dami-vitrine.vercel.app/' }]
+    },
+    {
       id: 'edutraq', kind: 'pro', year: '2025', art: 'print',
       title: { fr: 'EDUTRAQ', en: 'EDUTRAQ' },
       sub: { fr: 'ADMDI · pointage biométrique', en: 'ADMDI · biometric attendance' },
